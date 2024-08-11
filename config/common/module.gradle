@@ -1,0 +1,15 @@
+import java.nio.charset.StandardCharsets
+apply plugin: "java"
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+compileJava {
+    options.encoding = StandardCharsets.UTF_8
+}
+compileTestJava {
+    options.encoding = StandardCharsets.UTF_8
+}
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, "seconds"
+}

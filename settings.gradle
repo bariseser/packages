@@ -1,1 +1,3 @@
-rootProject.name = 'packages'
+rootProject.name = 'bariseser-packages'
+
+include ":model"

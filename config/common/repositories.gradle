@@ -1,0 +1,13 @@
+group "org.bariseser"
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "GitHubPackages"
+        url = "https://maven.pkg.github.com/bariseser/packages"
+        credentials {
+            username = "bariseser"
+            password = "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"
+        }
+    }
+}
