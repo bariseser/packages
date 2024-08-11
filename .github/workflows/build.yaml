@@ -17,6 +17,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           cache: 'gradle'
-      - run: ./gradlew publish
+      - run: ./gradlew publish --warning-mode all
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
