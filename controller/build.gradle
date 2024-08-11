@@ -1,0 +1,12 @@
+apply from: "${project.rootDir}/config/common/module.gradle"
+apply plugin: "java-library"
+apply from: "${project.rootDir}/config/common/publish.gradle"
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifactId = "common-$project.name"
+        }
+    }
+}

@@ -1,4 +1,4 @@
-package org.bariseser.packages;
+package org.bariseser.packages.model;
 
 public enum Gender {
     MALE,

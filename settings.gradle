@@ -1,3 +1,4 @@
 rootProject.name = 'bariseser-packages'
 
 include ":model"
+include ":controller"
