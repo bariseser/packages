@@ -13,11 +13,11 @@ publishing {
     }
     repositories {
         maven {
-            name = "GitHubPackages"
+            name = "GitHub"
             url = "https://maven.pkg.github.com/bariseser/packages"
             credentials {
-                username = 'bariseser'
-                password = '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'
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
