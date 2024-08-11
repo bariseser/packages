@@ -2,7 +2,7 @@ apply from: "${project.rootDir}/config/common/module.gradle"
 apply plugin: "java-library"
 apply from: "${project.rootDir}/config/common/publish.gradle"
 
-version =  scmVersion.version
+version =  '1.0.1'
 
 publishing {
     publications {
